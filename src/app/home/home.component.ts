@@ -10,7 +10,11 @@ export class HomeComponent {
   registerMode:boolean=false;
 
   toggleRegisterMode(){
-    this.registerMode = !this.toggleRegisterMode;
+    this.registerMode = !this.registerMode;
+  }
+
+  cancelRegisterMode(event:boolean){
+    this.registerMode=event;
   }
 
 }
